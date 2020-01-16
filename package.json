@@ -1,0 +1,50 @@
+{
+  "name": "react-hashtag-arron",
+  "version": "2.1.2",
+  "description": "React hashtags parser with custom renderer and click action on each hashtag + linkify.",
+  "main": "dist/react-hashtag.js",
+  "umd:main": "dist/react-hashtag.umd.js",
+  "module": "dist/react-hashtag.m.js",
+  "source": "src/index.js",
+  "scripts": {
+    "test": "jest --config jest.config.json --coverage",
+    "test-watch": "jest --config jest.config.json --watch",
+    "build": "microbundle --source src/index.js --target browser --output dist --sourcemap false"
+  },
+  "keywords": [
+    "hashtag",
+    "react",
+    "parser",
+    "hashtags"
+  ],
+  "files": [
+    "README.md",
+    "dist",
+    "package.json"
+  ],
+  "author": "Arron Hsiao <youzi.share@gmail.com>",
+  "repository": "https://github.com/cristianbote/react-hashtag",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "jest": "^23.6.0",
+    "microbundle": "^0.4.4",
+    "preact": "^8.4.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "peerDependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "preact": "^8.4.2"
+  },
+  "dependencies": {
+    "linkify-it": "^2.2.0",
+    "tlds": "^1.207.0"
+  }
+}
